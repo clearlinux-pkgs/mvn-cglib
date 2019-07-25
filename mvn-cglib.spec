@@ -4,14 +4,15 @@
 #
 Name     : mvn-cglib
 Version  : elease.3.2.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/cglib/cglib/archive/RELEASE_3_2_0.tar.gz
 Source0  : https://github.com/cglib/cglib/archive/RELEASE_3_2_0.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar
 Source2  : https://repo.maven.apache.org/maven2/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.pom
 Source3  : https://repo.maven.apache.org/maven2/cglib/cglib-parent/3.2.0/cglib-parent-3.2.0.pom
-Source4  : https://repo1.maven.org/maven2/cglib/cglib/3.2.0/cglib-3.2.0.jar
-Source5  : https://repo1.maven.org/maven2/cglib/cglib/3.2.0/cglib-3.2.0.pom
+Source4  : https://repo1.maven.org/maven2/cglib/cglib-parent/3.2.0/cglib-parent-3.2.0.pom
+Source5  : https://repo1.maven.org/maven2/cglib/cglib/3.2.0/cglib-3.2.0.jar
+Source6  : https://repo1.maven.org/maven2/cglib/cglib/3.2.0/cglib-3.2.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-1.1 Apache-2.0
@@ -43,11 +44,14 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib-nodep/2.1_3
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/cglib/cglib-parent/3.2.0
 cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib-parent/3.2.0/cglib-parent-3.2.0.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0/cglib-3.2.0.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/cglib/cglib-parent/3.2.0
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib-parent/3.2.0/cglib-parent-3.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0/cglib-3.2.0.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0/cglib-3.2.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/cglib/cglib/3.2.0/cglib-3.2.0.pom
 
 
 %files
