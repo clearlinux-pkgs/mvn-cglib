@@ -4,7 +4,7 @@
 #
 Name     : mvn-cglib
 Version  : elease.3.2.0
-Release  : 5
+Release  : 6
 URL      : https://github.com/cglib/cglib/archive/RELEASE_3_2_0.tar.gz
 Source0  : https://github.com/cglib/cglib/archive/RELEASE_3_2_0.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar
